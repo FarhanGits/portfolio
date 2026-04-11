@@ -60,7 +60,7 @@ export default function Header() {
         <ContactLists />
       </div>
       <div className="h-28 aspect-square flex items-end justify-center overflow-hidden rounded-xl">
-        <img src="../src/img/Foto Wisuda.jpg" alt="Dap" />
+        <img src="/img/Foto Wisuda.jpg" alt="Dap" />
       </div>
     </header>
   );
