@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-    './**/*.{html,js,json}',
-    './page/**/*.{html,js,json}'
+    "./index.html",
+    "./src/**/*.{ts,tsx,js,jsx}"
   ],
   theme: {
     extend: {
@@ -11,13 +11,13 @@ module.exports = {
         'yellow-default': '#FFCC81',
         'dark-default': '#364655',
       },
-      fontFamily: {},
       height: {
         '90p': '90%',
       },
       zIndex: {
         'to-front': '999',
-      }
+      },
+      // fontFamily: ['League Spartan', 'sans-serif']
     },
   },
   plugins: [],
