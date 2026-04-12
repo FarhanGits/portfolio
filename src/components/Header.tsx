@@ -1,5 +1,6 @@
 import React from "react";
 import { PERSONAL_DATA } from "../data/personal_data";
+import profile_img from "../img/Foto Wisuda.jpg";
 
 interface ContactProps {
   href: string;
@@ -60,7 +61,7 @@ export default function Header() {
         <ContactLists />
       </div>
       <div className="h-28 aspect-square flex items-end justify-center overflow-hidden rounded-xl">
-        <img src="/img/Foto Wisuda.jpg" alt="Dap" />
+        <img src={profile_img} alt="Dap" />
       </div>
     </header>
   );
