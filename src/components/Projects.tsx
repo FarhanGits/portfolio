@@ -26,6 +26,7 @@ function ProjectCard({
         </p>
         <a
           href={link}
+          target="_blank"
           className="text-xs rounded-md border px-2 py-1 font-semibold"
         >
           Project Repository

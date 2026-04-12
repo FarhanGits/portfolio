@@ -40,7 +40,7 @@ export const PROJECTS = [
     short_summary:
       "A modern and intuitive web application to manage personal finances with ease (Personal side project).",
     tech_stack: ["Laravel", "React.js", "Inertia.js", "Tailwind CSS", "MySQL"],
-    link: "https://github.com/Kingpling-Production/kompetisi-kimia",
+    link: "https://github.com/FarhanGits/finance-tracker-portfolio",
     job_desc: "",
   },
 ];
