@@ -3,8 +3,9 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig(({ command }) => ({
   plugins: [react()],
-  base: command === 'serve' ? '/' : '/portfolio/', // nama github repository
+  base: process.env.DEPLOY_TARGET === 'github' ? '/portfolio/' : '/', // '/portfolio' untuk github pages, '/' untuk cloudflare pages
   build: {
-    outDir: 'docs' // supaya langsung ke docs/ tanpa perlu dist/ (untuk github pages)
+    outDir: process.env.DEPLOY_TARGET === 'github' ? 'docs' : 'dist' // '/docs' untuk github pages, '/dist' untuk cloudflare pages
   }
 }))
+// Run "npm run build:github" untuk deploy via github pages sebelum push & merge ke main
