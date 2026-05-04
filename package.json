@@ -9,6 +9,7 @@
     "build:github": "cross-env DEPLOY_TARGET=github vite build",
     "preview": "vite preview"
   },
+  "type": "commonjs",
   "keywords": [],
   "author": "",
   "license": "ISC",
